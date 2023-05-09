@@ -14,7 +14,7 @@ const Skills = () => {
         {
           Skillset.map((elm) => {
             return <>
-              <div className="skill_box">
+              <div className="skill_box" key={elm.name}>
                 <div className="skill_img">
                   <img src={elm.img} alt="" />
                 </div>

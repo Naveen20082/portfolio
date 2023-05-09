@@ -116,7 +116,7 @@
     .project_img>img {
         border-radius: 5px
     }
-    .project_img>img:nth-child(2) {
+/*     .project_img>img:nth-child(2) {
         display: none;
-    }
+    } */
 }

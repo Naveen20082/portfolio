@@ -1,0 +1,38 @@
+.portfolio_footer {
+    position: relative;
+}
+
+.portfolio_footer>ul {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: transparent;
+    color: white;
+    list-style: disc;
+    justify-content: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+.portfolio_footer>ul>li:nth-child(1) {
+    list-style: none;
+}
+
+.portfolio_footer>ul>li>a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Lobster', cursive;
+    font-weight: 300;
+}
+
+@media (max-width:650px) {
+    .portfolio_footer>ul {
+        position: relative;
+        bottom: 0;
+        padding: 0.3em;
+        background-color: rgb(95, 91, 84);
+    }
+}

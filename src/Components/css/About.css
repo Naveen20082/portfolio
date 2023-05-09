@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+.about_cont {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5em;
+    justify-content: center;
+    gap: 1em;
+}
+
+.about_cont>h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 3em;
+}
+
+.about_cont>p {
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+}
+
+.about_cont>button {
+    background-color: rgb(95, 91, 84);
+    border: 2px solid rgb(78, 75, 68);
+    padding: 7px;
+    border-radius: 9px;
+    box-shadow: 1px 1px 4px rgb(95, 91, 84);
+    width: fit-content;
+}
+
+.about_cont>button>a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+.about_cont>button>a::before {
+    content: "";
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    height: 1px;
+    background-color: white;
+}
+
+.about_cont>button>a:hover::before {
+    animation: line 0.5s forwards;
+}
+
+@keyframes line {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}

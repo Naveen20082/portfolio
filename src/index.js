@@ -12,13 +12,13 @@ import store from './Components/Store/Store';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter >
+  <HashRouter >
   <React.StrictMode>
     
       <App />
     
   </React.StrictMode>
- </BrowserRouter>
+ </HashRouter>
 
 );
 

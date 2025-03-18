@@ -1,117 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Tiro+Gurmukhi:ital@1&display=swap");
 * {
-    margin: 0%;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  background: url("/public/Image/mainbg.jpg") center center/cover;
+  background-attachment: fixed;
 }
 
 .main_cont {
-    display: grid;
-    grid-template-columns: repeat(2, 50%);
-    place-items: center;
-    position: relative;
-    padding: 5rem;
-    width: 100%;
-    height: 100vh;
-    background: url("/public/Image/mainbg.jpg") center center/cover;
+  display: grid;
+  grid-template-columns: repeat(2, 50%);
+  place-items: center;
+  position: relative;
+  padding: 5rem;
+  width: 100%;
+  height: 100vh;
+
+  background: url("/public/Image/mainbg.jpg") center center/cover;
 }
 
 .main_cont::before {
-    content: '';
-    position: absolute;
-    left: 0%;
-    right: 0%;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  content: "";
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .main_info {
-    position: relative;
-    z-index: 5;
-    color: white;
-    display: grid;
-    gap: 1em;
+  position: relative;
+  z-index: 5;
+  color: white;
+  display: grid;
+  gap: 1em;
 }
 
-.main_info>h1>span>span {
-    text-shadow: 1px 1px 0px rgb(207, 207, 207), 2px 2px 0px rgb(207, 207, 207), 3px 3px 0px rgb(207, 207, 207);
-    font-size: 45px;
+.main_info > h1 > span > span {
+  text-shadow: 1px 1px 0px rgb(207, 207, 207), 2px 2px 0px rgb(207, 207, 207),
+    3px 3px 0px rgb(207, 207, 207);
+  font-size: 45px;
 }
 
-.main_info>button {
-    background-color: rgb(95, 91, 84);
-    border: 2px solid rgb(78, 75, 68);
-    padding: 7px;
-    border-radius: 9px;
-    box-shadow: 1px 1px 4px rgb(95, 91, 84);
-    width: fit-content;
+.main_info > button {
+  background-color: rgb(95, 91, 84);
+  border: 2px solid rgb(78, 75, 68);
+  padding: 7px;
+  border-radius: 9px;
+  box-shadow: 1px 1px 4px rgb(95, 91, 84);
+  width: fit-content;
 }
 
-.main_info>button>a {
-    color: white;
-    text-decoration: none;
-    position: relative;
+.main_info > button > a {
+  color: white;
+  text-decoration: none;
+  position: relative;
 }
 
-.main_info>button>a::before {
-    content: "";
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    height: 1px;
-    background-color: black;
+.main_info > button > a::before {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 1px;
+  background-color: black;
 }
 
-.main_info>button>a:hover::before {
-    animation: line 0.5s forwards;
+.main_info > button > a:hover::before {
+  animation: line 0.5s forwards;
 }
 
-.main_info>p {
-    font-family: 'Tiro Gurmukhi', serif;
-    font-size: 25px;
+.main_info > p {
+  font-family: "Tiro Gurmukhi", serif;
+  font-size: 25px;
 }
 
 .main_img {
-    width: 20rem;
-    height: 20rem;
-    z-index: 5;
+  width: 20rem;
+  height: 20rem;
+  z-index: 5;
 }
 
-.main_img>img {
-    width: 100%;
-    border-radius: 20%;
-    box-shadow: 0px 10px 34px;
-    outline: 2px solid white;
-    transition: all 0.5s;
+.main_img > img {
+  width: 100%;
+  border-radius: 20%;
+  box-shadow: 0px 10px 34px;
+  outline: 2px solid white;
+  transition: all 0.5s;
 }
 
-.main_img>img:hover {
-    border-radius: 50%;
-    outline-offset: 5px;
+.main_img > img:hover {
+  border-radius: 50%;
+  outline-offset: 5px;
 }
 
 @media (max-width: 650px) {
-    .main_cont {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: flex-end;
-        height: 100vh;
-        padding: 3rem;
-    }
-    .main_info>h1>span>span {
-        font-size: 35px;
-    }
-    .main_img>img {
-        border-radius: 50%;
-    }
-    /* .main_info>h1 {
+  .main_cont {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    height: 100vh;
+    padding: 3rem;
+  }
+  .main_info > h1 > span > span {
+    font-size: 35px;
+  }
+  .main_img > img {
+    border-radius: 50%;
+  }
+  /* .main_info>h1 {
         height: 5em;
     } */
-    .main_info {
-        gap: 2em;
-    }
-    .main_cont::before {
-        top: 0%;
-    }
+  .main_info {
+    gap: 2em;
+  }
+  .main_cont::before {
+    top: 0%;
+  }
 }
